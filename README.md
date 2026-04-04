@@ -151,12 +151,16 @@ agentic-serve
 
 For a live demo, deploy the same Uvicorn app on a free-tier host, set the same env vars in the platform dashboard, bind to `0.0.0.0`, and use the platform’s `PORT` if required.
 
+## Demo (PDF)
+
+A **static demo** of the project (e.g. web UI, example query, and sample output) is included in **`Agentic_search_demo.pdf`** at the repository root. Open that file for a walkthrough when a hosted URL is not available.
+
 ## Submission (CIIR)
 
 - **Email:** `csamarinas@umass.edu`  
 - **Subject line (exact):** `CIIR challenge submission`  
 - **Include:** link to a **public GitHub** repository containing this code.  
-- **Encouraged:** URL of a **live demo** on a free-tier instance (optional).
+- **Demo:** see **`Agentic_search_demo.pdf`** in the repo; a **live demo** URL on a free-tier host is optional but encouraged.
 
 ## License
 
