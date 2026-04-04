@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-search"
+version = "0.1.0"
+description = "Topic query → web search, scrape, LLM-extracted entities with citations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.109.0",
+  "uvicorn[standard]>=0.27.0",
+  "httpx>=0.26.0",
+  "beautifulsoup4>=4.12.0",
+  "lxml>=5.0.0",
+  "pydantic>=2.5.0",
+  "pydantic-settings>=2.1.0",
+  "python-dotenv>=1.0.0",
+  "openai>=1.12.0",
+]
+
+[project.scripts]
+agentic-search = "agentic_search.__main__:main"
+agentic-serve = "agentic_search.serve:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
